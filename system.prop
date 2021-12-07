@@ -33,6 +33,9 @@ vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 vendor.display.disable_skip_validate=1
 
+# DHA Tunning
+ro.config.dha_tunnable=1
+
 # DPM
 persist.vendor.dpm.feature=1
 
@@ -92,6 +95,13 @@ persist.timed.enable=true
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
+
+# Smoothens UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
+# Venom
+ro.surface_flinger.running_without_sync_framework=true
 
 # WiFi Display
 persist.debug.wfd.enable=1
